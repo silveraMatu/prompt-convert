@@ -2,12 +2,12 @@
 
 //variables
 let eleccionUsuario;
-const tasaCambioUSD = 1300;
+const TASA_CAMBIO_USD = 1300;
 let history = [];
 
 //Funcion de conversion de divisa. Almacena datos en un objeto y lo pushea al array history.
 function convertCurrency(pesos) {
-  let dolares = pesos / tasaCambioUSD;
+  let dolares = pesos / TASA_CAMBIO_USD;
   alert(`ARS${pesos} son USD${dolares.toFixed(2)}`);
   
   let historialCambio = {
